@@ -18,7 +18,7 @@ const palette = {
   gray4: '#CED4DA',
   gray5: '#ADB5BD',
   gray6: '#868E96',
-  gray7: '#495057',
+  gray7: '#474c5c',
   gray8: '#343A40',
   gray9: '#212529',
   /* red */
@@ -32,5 +32,50 @@ const palette = {
   red7: '#f03e3e',
   red8: '#e03131',
   red9: '#c92a2a',
+  /* orange */
+  orange0: '#fff4e6',
+  orange1: '#ffe8cc',
+  orange2: 'ffd8a8',
+  orange3: '#ffc078',
+  orange4: '#ffa94d',
+  orange5: '#ff922b',
+  orange6: '#fd7e14',
+  orange7: '#f76707',
+  orange8: '#e8590c',
+  orange9: '#d9480f',
+};
+
+export const buttonColorMap: {
+  [color: string]: {
+    background: string;
+    color: string;
+    hoverBackground: string;
+  };
+} = {
+  teal: {
+    background: palette.teal6,
+    color: 'white',
+    hoverBackground: palette.teal5,
+  },
+  lightGray: {
+    background: palette.gray2,
+    color: palette.gray7,
+    hoverBackground: palette.gray1,
+  },
+  gray: {
+    background: palette.gray6,
+    color: 'white',
+    hoverBackground: palette.gray5,
+  },
+  darkGray: {
+    background: palette.gray7,
+    color: 'white',
+    hoverBackground: palette.gray6,
+  },
+  orange: {
+    background: '#ff7306',
+    color: 'white',
+    hoverBackground: palette.orange5,
+  },
 };
 export default palette;
